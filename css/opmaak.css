@@ -1,0 +1,160 @@
+@import"reset.css";
+/* fond import*/
+@import "https://fonts.googleapis.com/css?family=Open+Sans:400,500,700&display=swap";
+/* Font awseme */
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css";
+
+/* styling header en footer en algemene stijlen------------------------------------------------*/
+
+header,
+footer {
+    height: 5vh;
+    /*om een procentuele verhouding te krijgen tussen header, footer en main=(70vh)*/
+    background: white;
+}
+
+body { font: normal 100%/1.2 "Open Sans", sans-serif;}
+
+h2 {font-size: 1.5em}
+
+a {color: black;}
+
+a:hover {color: red;}
+
+
+/*    main stijlen ------------------------------------------------------------------------*/
+
+main {
+    height: 90vh;
+    background: rgb(45, 45, 45);
+    background: radial-gradient(circle, rgba(45, 45, 45, 1) 0%, rgba(0, 0, 0, 1) 100%);
+/*    login paneel centreren */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* panel stijlen-------------------------------------------------------------------------------*/
+
+div#panel {
+    width: 600px;
+    display: flex;
+    min-height: 420px;
+
+}
+
+
+/*aside stijlen -------------------------------------------------------------------------------*/
+aside.asidelogin {
+    background: url("../images/bg.jpg") center  ;
+    background-size: cover;
+    color: white;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+
+aside.asidelogin a {color: white;}
+
+aside.asidelogin a:hover {color: red;}
+
+aside div.asidelogin-text {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+/* text styling  */
+aside div.asidelogin-text h2 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    padding: 10px;
+
+}
+
+/*lijst social-media*/
+
+#login-socialmedia li {
+    display: inline-block;
+    padding: 30px 10px;
+
+}
+
+
+
+
+/*form stijlen---------------------------------------------------------------------------------*/
+
+
+form#login-form {
+    background: white;
+    padding: 35px 25px;
+    width: 50%;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+
+
+}
+
+form#login-form ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+/* submitbutton en  a element horizontaal zetten*/
+form#login-form ul li:last-child {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+form#login-form ul li label,
+form#login-form ul li input {
+    width: 100%;
+    color: gray;
+
+
+}
+
+form#login-form ul li label{text-transform: uppercase;}
+
+
+form#login-form input[type=text],
+form#login-form input[type=password],
+form#login-form input[type=email] {
+    border: none;
+    border-bottom: gray solid 1px;
+}
+
+form#login-form input[type=submit] {
+    width: 100px;
+    height: 30px;
+    text-transform: uppercase;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+
+form#login-form input[type=submit]:hover {
+    background: red;
+    color: white;
+    cursor: pointer;
+}
+
+form#login-form input[type=text]:focus,
+form#login-form input[type=password]:focus,
+form#login-form input[type=email]:focus {
+    outline: none;
+    border-bottom: gray solid 2px;
+}
+
+
